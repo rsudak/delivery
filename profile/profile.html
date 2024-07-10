@@ -1,1 +1,18 @@
+<h1>Экран личного кабинета (профиля)</h1>
+<div id="profile-details">
+    <p>Имя пользователя: <span id="profile-username"></span></p>
+    <p>Email: <span id="profile-email"></span></p>
+    <!-- Дополнительные данные профиля -->
+</div>
+<button type="button" id="logoutButton">Выйти</button>
+<script>
+    // Заполните данные профиля из хранилища или API
+    document.getElementById('profile-username').innerText = 'Пример имени';
+    document.getElementById('profile-email').innerText = 'example@example.com';
+
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        // Логика выхода из системы
+        loadScreen('login/login.html');
+    });
+</script>
 
