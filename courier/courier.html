@@ -1,1 +1,19 @@
+<h1>Экран адреса для приезда курьера</h1>
+<form id="courier-form">
+    <label for="courier-address">Адрес:</label>
+    <input type="text" id="courier-address" name="courier-address" required>
+    
+    <label for="courier-date">Дата:</label>
+    <input type="date" id="courier-date" name="courier-date" required>
+    
+    <label for="courier-time">Время:</label>
+    <input type="time" id="courier-time" name="courier-time" required>
+    
+    <button type="button" id="nextButton">Продолжить</button>
+</form>
+<script>
+    document.getElementById('nextButton').addEventListener('click', function() {
+        loadScreen('delivery/delivery.html');
+    });
+</script>
 
