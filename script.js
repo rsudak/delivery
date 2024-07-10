@@ -1,23 +1,49 @@
-document.getElementById('calculate-button').addEventListener('click', function() {
-    const weight = parseFloat(document.getElementById('parcel-weight').value);
-    const dimensions = document.getElementById('parcel-dimensions').value.split('x').map(Number);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-    if (weight && dimensions.length === 3) {
-        const volume = dimensions[0] * dimensions[1] * dimensions[2];
-        const amount = calculateAmount(weight, volume);
-        document.getElementById('amount').innerText = `Amount: $${amount.toFixed(2)}`;
-    } else {
-        alert('Please enter valid weight and dimensions.');
-    }
-});
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-document.getElementById('delivery-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Form submitted successfully!');
-});
+h1, h2 {
+    color: #333;
+}
 
-function calculateAmount(weight, volume) {
-    const weightCost = weight * 2; // $2 per kg
-    const volumeCost = volume * 0.05; // $0.05 per cubic cm
-    return weightCost + volumeCost;
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#amount {
+    margin: 20px 0;
+    font-weight: bold;
 }
