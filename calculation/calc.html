@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экран расчёта доставки</title>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Экран расчёта доставки</h1>
+        <!-- Parcel calculation form -->
+        <form id="calculate-form">
+            <label for="parcel-weight">Вес (кг):</label>
+            <input type="number" id="parcel-weight" name="parcel-weight" required>
+            
+            <label for="parcel-dimensions">Размеры (Д x Ш x В) см:</label>
+            <input type="text" id="parcel-dimensions" name="parcel-dimensions" required>
+            
+            <button type="submit">Продолжить</button>
+        </form>
+    </div>
+    <!-- JavaScript for calculation functionality -->
+    <script src="calculate.js"></script>
+</body>
+</html>
 
