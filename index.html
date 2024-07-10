@@ -1,48 +1,62 @@
 <!DOCTYPE html>
+<html lang="en">
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Service</title>
     <title>Служба доставки</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <h1>Delivery Service</h1>
         <h1>Служба доставки</h1>
         <form id="delivery-form">
+            <h2>Sender Information</h2>
+            <label for="sender-name">Name:</label>
             <h2>Информация об отправителе</h2>
             <label for="sender-name">Имя:</label>
             <input type="text" id="sender-name" name="sender-name" required>
-            
+
+            <label for="sender-address">Address:</label>
             <label for="sender-address">Адрес:</label>
             <input type="text" id="sender-address" name="sender-address" required>
-            
+
+            <label for="sender-phone">Phone:</label>
             <label for="sender-phone">Телефон:</label>
             <input type="text" id="sender-phone" name="sender-phone" required>
-            
+
+            <h2>Recipient Information</h2>
+            <label for="recipient-name">Name:</label>
             <h2>Информация о получателе</h2>
             <label for="recipient-name">Имя:</label>
             <input type="text" id="recipient-name" name="recipient-name" required>
-            
+
+            <label for="recipient-address">Address:</label>
             <label for="recipient-address">Адрес:</label>
             <input type="text" id="recipient-address" name="recipient-address" required>
-            
+
+            <label for="recipient-phone">Phone:</label>
             <label for="recipient-phone">Телефон:</label>
             <input type="text" id="recipient-phone" name="recipient-phone" required>
-            
+
+            <h2>Parcel Information</h2>
+            <label for="parcel-weight">Weight (kg):</label>
             <h2>Информация о посылке</h2>
             <label for="parcel-weight">Вес (кг):</label>
             <input type="number" id="parcel-weight" name="parcel-weight" required>
-            
+
+            <label for="parcel-dimensions">Dimensions (L x W x H) cm:</label>
             <label for="parcel-dimensions">Размеры (Д x Ш x В) см:</label>
             <input type="text" id="parcel-dimensions" name="parcel-dimensions" required>
-            
+
+            <button type="button" id="calculate-button">Calculate Amount</button>
             <button type="button" id="calculate-button">Рассчитать стоимость</button>
             <div id="amount"></div>
-            
+
+            <button type="submit">Submit</button>
             <button type="submit">Отправить</button>
         </form>
     </div>
     <script src="script.js"></script>
-</body>
-</html>
