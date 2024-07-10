@@ -4,6 +4,11 @@
     <input type="text" id="username" name="username" required>
     <label for="password">Пароль:</label>
     <input type="password" id="password" name="password" required>
-    <button type="submit">Войти</button>
+    <button type="button" id="loginButton">Войти</button>
 </form>
+<script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+        loadScreen('calculate/calculate.html')
+    })
+</script>
 
