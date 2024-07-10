@@ -1,1 +1,19 @@
+<h1>Экран адреса доставки</h1>
+<form id="delivery-form">
+    <label for="delivery-address">Адрес доставки:</label>
+    <input type="text" id="delivery-address" name="delivery-address" required>
+    
+    <label for="delivery-date">Дата доставки:</label>
+    <input type="date" id="delivery-date" name="delivery-date" required>
+    
+    <label for="delivery-time">Время доставки:</label>
+    <input type="time" id="delivery-time" name="delivery-time" required>
+    
+    <button type="button" id="nextButton">Продолжить</button>
+</form>
+<script>
+    document.getElementById('nextButton').addEventListener('click', function() {
+        loadScreen('profile/profile.html');
+    });
+</script>
 
