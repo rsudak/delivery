@@ -1,1 +1,19 @@
+<h1>Экран данных отправителя</h1>
+<form id="sender-form">
+    <label for="sender-name">Имя:</label>
+    <input type="text" id="sender-name" name="sender-name" required>
+    
+    <label for="sender-address">Адрес:</label>
+    <input type="text" id="sender-address" name="sender-address" required>
+    
+    <label for="sender-phone">Телефон:</label>
+    <input type="text" id="sender-phone" name="sender-phone" required>
+    
+    <button type="button" id="nextButton">Продолжить</button>
+</form>
+<script>
+    document.getElementById('nextButton').addEventListener('click', function() {
+        loadScreen('courier/courier.html');
+    });
+</script>
 
