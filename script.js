@@ -5,20 +5,19 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.text())
             .then(html => {
                 document.getElementById('content').innerHTML = html;
-                // Добавьте вызовы скриптов, необходимых для каждого экрана, если они есть
+                // Выполнение скриптов, необходимых для загруженного экрана
+                const scripts = document.querySelectorAll('#content script');
+                scripts.forEach(oldScript => {
+                    const newScript = document.createElement('script');
+                    newScript.innerHTML = oldScript.innerHTML;
+                    document.body.appendChild(newScript);
+                });
             })
             .catch(error => {
                 console.error('Ошибка загрузки экрана:', error);
-            })
+            });
     }
 
     // Загрузка начального экрана (например, логин)
-    loadScreen('login/login.html')
-
-    // Пример для смены экрана
-    // Вы можете использовать события, такие как нажатие кнопок, для вызова этой функции
-    document.getElementById('someButton').addEventListener('click', function() {
-        loadScreen('calculate/calculate.html')
-    })
-})
-
+    loadScreen('login/login.html');
+});
