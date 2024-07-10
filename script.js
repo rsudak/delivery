@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Загрузка начального экрана (например, логин)
-    loadScreen('login/login.html')
+    loadScreen('authorization/login.html')
 
     // Пример для смены экрана
     // Вы можете использовать события, такие как нажатие кнопок, для вызова этой функции
