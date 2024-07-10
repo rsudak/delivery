@@ -1,14 +1,24 @@
 <h1>Экран авторизации</h1>
 <form id="login-form">
-    <label for="username">Имя пользователя:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required>
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" required>
+    <label for="code">Код:</label>
+    <input type="text" id="code" name="code" required>
     <button type="button" id="loginButton">Войти</button>
 </form>
 <script>
     document.getElementById('loginButton').addEventListener('click', function() {
-        loadScreen('calculate/calculate.html')
-    })
+        // Ваша логика проверки телефона и кода
+        const phone = document.getElementById('phone').value;
+        const code = document.getElementById('code').value;
+
+        // Простая проверка для примера
+        if (phone && code) {
+            loadScreen('calculate/calculate.html');
+        } else {
+            alert('Пожалуйста, введите телефон и код.');
+        }
+    });
 </script>
+
 
