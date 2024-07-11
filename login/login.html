@@ -11,12 +11,7 @@
         const phone = document.getElementById('phone').value;
         const code = document.getElementById('code').value;
 
-        console.log('Нажата кнопка Войти');
-        console.log('Телефон:', phone);
-        console.log('Код:', code);
-
         if (phone && code) {
-            console.log('Поля заполнены, загрузка следующего экрана');
             loadScreen('calculate/calculate.html');
         } else {
             alert('Пожалуйста, введите телефон и код.');
