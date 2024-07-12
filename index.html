@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="content"></div>
-    <script src="/my-delivery-app/script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadScreen('login/login.html')">Авторизация</a></li>
+                <li><a href="#" onclick="loadScreen('calculate/calculate.html')">Расчёт</a></li>
+                <li><a href="#" onclick="loadScreen('recipient/recipient.html')">Получатель</a></li>
+                <li><a href="#" onclick="loadScreen('sender/sender.html')">Отправитель</a></li>
+                <li><a href="#" onclick="loadScreen('delivery/delivery.html')">Доставка</a></li>
+                <li><a href="#" onclick="loadScreen('profile/profile.html')">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Многоэкранное Приложение</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
