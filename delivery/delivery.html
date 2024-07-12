@@ -1,19 +1,20 @@
-<h1>Экран адреса доставки</h1>
-<form id="delivery-form">
-    <label for="delivery-address">Адрес доставки:</label>
-    <input type="text" id="delivery-address" name="delivery-address" required>
-    
-    <label for="delivery-date">Дата доставки:</label>
-    <input type="date" id="delivery-date" name="delivery-date" required>
-    
-    <label for="delivery-time">Время доставки:</label>
-    <input type="time" id="delivery-time" name="delivery-time" required>
-    
-    <button type="button" id="nextButton">Продолжить</button>
-</form>
-<script>
-    document.getElementById('nextButton').addEventListener('click', function() {
-        loadScreen('profile/profile.html');
-    });
-</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main>
+        <h1>Адрес доставки</h1>
+        <form>
+            <label for="deliveryAddress">Адрес доставки</label>
+            <input type="text" id="deliveryAddress" name="deliveryAddress">
 
+            <button type="button" onclick="loadScreen('profile/profile.html')">Далее</button>
+        </form>
+    </main>
+</body>
+</html>
