@@ -1,19 +1,23 @@
-<h1>Экран данных получателя</h1>
-<form id="recipient-form">
-    <label for="recipient-name">Имя:</label>
-    <input type="text" id="recipient-name" name="recipient-name" required>
-    
-    <label for="recipient-address">Адрес:</label>
-    <input type="text" id="recipient-address" name="recipient-address" required>
-    
-    <label for="recipient-phone">Телефон:</label>
-    <input type="text" id="recipient-phone" name="recipient-phone" required>
-    
-    <button type="button" id="nextButton">Продолжить</button>
-</form>
-<script>
-    document.getElementById('nextButton').addEventListener('click', function() {
-        loadScreen('sender/sender.html');
-    });
-</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получатель</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main>
+        <h1>Данные получателя</h1>
+        <form>
+            <label for="recipientName">Имя получателя</label>
+            <input type="text" id="recipientName" name="recipientName">
 
+            <label for="recipientPhone">Телефон получателя</label>
+            <input type="text" id="recipientPhone" name="recipientPhone">
+
+            <button type="button" onclick="loadScreen('sender/sender.html')">Далее</button>
+        </form>
+    </main>
+</body>
+</html>
