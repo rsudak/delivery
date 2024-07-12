@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     function loadScreen(screen) {
+        console.log('Loading screen:', screen); // Debugging log
         fetch(screen)
             .then(response => response.text())
             .then(html => {
@@ -53,3 +54,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Make loadScreen function available globally
     window.loadScreen = loadScreen;
 });
+
