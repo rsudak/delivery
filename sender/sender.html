@@ -10,13 +10,16 @@
     <main>
         <h1>Данные отправителя</h1>
         <form>
-            <label for="senderName">Имя отправителя</label>
-            <input type="text" id="senderName" name="senderName">
+            <label for="senderFirstName">Имя отправителя</label>
+            <input type="text" id="senderFirstName" name="senderFirstName">
+            
+            <label for="senderLastName">Фамилия отправителя</label>
+            <input type="text" id="senderLastName" name="senderLastName">
 
             <label for="senderPhone">Телефон отправителя</label>
             <input type="text" id="senderPhone" name="senderPhone">
 
-            <button type="button" onclick="loadScreen('delivery/delivery.html')">Далее</button>
+            <button type="button" onclick="loadScreen('../delivery/delivery.html')">Далее</button>
         </form>
     </main>
 </body>
